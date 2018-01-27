@@ -205,3 +205,91 @@ body {
 .boughtGoods {
     height: 30px;
 }
+
+.badge {
+    background-color: #b427a2;
+
+    position: fixed;
+    bottom: 0px;
+    right: 50px;
+    width: 150px;
+    height: 80px;
+
+    text-align: left;
+    color: white;
+    padding: 10px;
+
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+
+    transition: all 900ms ease;
+    transform: translateY(55px);
+}
+
+.badgeTitle {
+    font-size: 25px;
+}
+
+.cratedBy {
+    font-size: 12px;
+    padding-top: 15px;
+}
+
+.myName {
+    font-size: 18px;
+}
+
+.badge:hover {
+    background-color: #680cb4;
+    transform: translateY(0px);
+}
+
+@media print {
+    .badge {
+        background-color: white;
+        color: black;
+
+        border: 2px solid black;
+        transform: none;
+        height: 50px;
+    }
+
+    .badgeTitle {
+        display: none;
+    }
+}
+
+button {
+    position: relative;
+    box-sizing: border-box;
+}
+
+button::after {
+    content: attr(data-tooltip);
+    display: block;
+    position: absolute;
+    box-sizing: border-box;
+
+    background-color: #b427a2;
+    color: white;
+    font-size: 12px;
+
+    top: -25px;
+    left: 50%;
+    right: 0;
+    margin-left: -140px;
+    width: 280px;
+    height: 22px;
+
+    padding: 3px;
+    border-radius: 8px;
+
+    opacity: 0;
+    visibility: hidden;
+}
+
+button:hover::after {
+    opacity: 1;
+    visibility: visible;
+    transition: all 900ms ease;
+}
