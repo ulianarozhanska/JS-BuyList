@@ -1,8 +1,207 @@
-h1 {
-    color: red;
+body {
+    background-color: #DADADA;
+    padding-top: 100px;
+    font-family:  Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
 }
 
-.text2018 {
-    color: #ff59c0;
-    font-size: 40px;
+.container {
+    width: 92%;
+    margin: auto;
+    background-color: #DADADA;
+    max-width: 1125px;
+}
+
+.leftColumn {
+    float: left;
+    background-color: white;
+    border-radius: 4px;
+    width: 68%;
+}
+
+.rightColumn {
+    float: right;
+    background-color: white;
+    width: 29%;
+    border-radius: 4px;
+}
+
+@media (max-width: 780px) {
+    .leftColumn {
+        width: 100%;
+        float: none;
+    }
+
+    .rightColumn {
+        margin-top: 10px;
+        width: 100%;
+        float: none;
+    }
+}
+
+.search {
+    padding: 10px;
+    border-radius: 4px;
+    display: grid;
+    grid-template-columns: 1fr 110px;
+}
+
+.searchButton {
+    background-color: #436fdc;
+    border-color: #436fdc;
+    color: white;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    padding: 10px;
+    margin-left: -10px;
+}
+
+.searchLine {
+    padding: 10px;
+    border-radius: 4px;
+    border-width: 0.7px;
+}
+
+.tomatoesBox {
+    padding: 10px;
+    width: 100%;
+    margin: auto;
+    border-bottom: 1px solid #DADADA;
+    border-top: 1px solid #DADADA;
+}
+
+.cookiesBox {
+    padding: 10px;
+    width: 100%;
+    margin: auto;
+    border-bottom: 1px solid #DADADA;
+}
+
+.cheeseBox {
+    padding: 10px;
+    width: 100%;
+    margin: auto;
+}
+
+.title {
+    display: inline-block;
+    width: 35%;
+    float: left;
+    padding: 8px;
+}
+
+.minusButton {
+    border-color: #DB2828;
+    background-color: #DB2828;
+    color: white;
+
+    font-size: 20px;
+
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+}
+
+.plusButton {
+    border-color: #21BA45;
+    background-color: #21BA45;
+    color: white;
+
+    font-size: 18px;
+
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+}
+
+.amountLabel {
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+
+    font-size: 14px;
+
+    border-radius: 4px;
+    background-color: #DADADA;
+    border-color: #DADADA;
+    color: black;
+}
+
+.buyColumn {
+    padding-right: 25px;
+    float: right;
+}
+
+.buyButton {
+    background-color: #f0f0f0;
+    border-color: #DADADA;
+
+    padding: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-size: 11px;
+    width: 80px;
+    border-radius: 4px;
+}
+
+.unbuyButton {
+    border-color: #d30000;
+    background-color: #d30000;
+    color: white;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+}
+
+.leftToBuy {
+    padding: 18px;
+    padding-left: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    border-bottom: 1px solid #DADADA;
+}
+
+.bought {
+    padding: 15px;
+    padding-left: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    border-bottom: 1px solid #DADADA;
+    border-top: 1px solid #DADADA;
+}
+
+.goodsToBuy {
+    padding: 10px;
+}
+
+.tomatoesLeftBox, .cookiesLeftBox, .cheeseLeftBox {
+    display: inline-block;
+    background-color: #DADADA;
+    padding: 6px;
+    border-radius: 4px;
+    font-size: 10px;
+}
+
+.amountToBuy {
+    display: inline-block;
+    background-color: #ff5016;
+    color: white;
+    font-weight: bolder;
+    border-radius: 10px;
+    padding: 5px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.boughtGoods {
+    height: 30px;
 }

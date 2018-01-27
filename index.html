@@ -2,15 +2,90 @@
 <html>
 <head lang="uk">
     <meta charset="UTF-8">
-    <title>My Pag</title>
-
-
+    <title>My BuyList</title>
     <link rel="stylesheet" type="text/css" href="main.css" />
 </head>
 <body>
-<h1>Hello World</h1>
-<p>Hello Git</p>
-<p>Test</p>
-<div class="text2018">Hi 2018!!!</div>
+    <div class="container">
+        <div class="leftColumn">
+            <div class="search">
+                <input class="searchLine" type="text" placeholder="Назва товару">
+                <button class="searchButton">Додати</button>
+            </div>
+
+            <div class="tomatoes">
+                <div class="tomatoesBox">
+                    <span class = "titleColumn">
+                        <span class = "title">Помідори</span>
+                    </span>
+                    <span class = "amountColumn">
+                        <button class="minusButton">-</button>
+                        <span class = "amountLabel">1</span>
+                        <button class="plusButton">+</button>
+                    </span>
+                    <span class = "buyColumn">
+                        <button class="buyButton">Куплено</button>
+                        <button class="unbuyButton">x</button>
+                    </span>
+                </div>
+            </div>
+
+            <div class="cookies">
+                <div class="cookiesBox">
+                    <span class = "titleColumn">
+                        <span class = "title">Печиво</span>
+                    </span>
+                    <span class = "amountColumn">
+                        <button class="minusButton">-</button>
+                        <span class = "amountLabel">1</span>
+                        <button class="plusButton">+</button>
+                    </span>
+                    <span class = "buyColumn">
+                        <button class="buyButton">Куплено</button>
+                        <button class="unbuyButton">x</button>
+                    </span>
+                </div>
+            </div>
+
+            <div class="cheese">
+                <div class="cheeseBox">
+                    <span class = "titleColumn">
+                        <span class = "title">Сир</span>
+                    </span>
+                    <span class = "amountColumn">
+                        <button class="minusButton">-</button>
+                        <span class = "amountLabel">1</span>
+                        <button class="plusButton">+</button>
+                    </span>
+                    <span class = "buyColumn">
+                        <button class="buyButton">Куплено</button>
+                        <button class="unbuyButton">x</button>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class = "rightColumn">
+            <div class="leftToBuy">Залишилося</div>
+
+            <div class="goodsToBuy">
+                <span class="tomatoesLeftBox">
+                    <span class="titleToBuy">Помідори</span>
+                    <span class="amountToBuy">1</span>
+                </span>
+                <span class="cookiesLeftBox">
+                    <span class="titleToBuy">Печиво</span>
+                    <span class="amountToBuy">1</span>
+                </span>
+                <span class="cheeseLeftBox">
+                    <span class="titleToBuy">Сир</span>
+                    <span class="amountToBuy">1</span>
+                </span>
+            </div>
+
+            <div class="bought">Куплено</div>
+
+            <div class="boughtGoods"></div>
+        </div>
+    </div>
 </body>
 </html>
