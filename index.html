@@ -16,16 +16,13 @@
             <div class="tomatoes">
                 <div class="tomatoesBox">
                     <span class = "titleColumn">
-                        <span class = "title">Помідори</span>
+                        <span class = "titleT">Помідори</span>
                     </span>
                     <span class = "amountColumn">
-                        <button class="minusButton" data-tooltip="Зменшує кількість цього товару">-</button>
-                        <span class = "amountLabel">1</span>
-                        <button class="plusButton" data-tooltip="Збільшує кількість цього товару">+</button>
+                        <span class = "amountLabelT">2</span>
                     </span>
                     <span class = "buyColumn">
-                        <button class="buyButton" data-tooltip="Тисніть, якщо вже купили цей товар">Куплено</button>
-                        <button class="unbuyButton" data-tooltip="Тисніть, щоб видалити цей товар зі списку">x</button>
+                        <button class="buyButton" data-tooltip="Тисніть, якщо вже купили цей товар">Не куплено</button>
                     </span>
                 </div>
             </div>
@@ -33,11 +30,11 @@
             <div class="cookies">
                 <div class="cookiesBox">
                     <span class = "titleColumn">
-                        <span class = "title">Печиво</span>
+                        <span class = "titleC">Печиво</span>
                     </span>
                     <span class = "amountColumn">
                         <button class="minusButton" data-tooltip="Зменшує кількість цього товару">-</button>
-                        <span class = "amountLabel">1</span>
+                        <span class = "amountLabel">2</span>
                         <button class="plusButton" data-tooltip="Збільшує кількість цього товару">+</button>
                     </span>
                     <span class = "buyColumn">
@@ -50,10 +47,10 @@
             <div class="cheese">
                 <div class="cheeseBox">
                     <span class = "titleColumn">
-                        <span class = "title">Сир</span>
+                        <input class="titleCh" type="text" value="Cир">
                     </span>
                     <span class = "amountColumn">
-                        <button class="minusButton" data-tooltip="Зменшує кількість цього товару">-</button>
+                        <button class="minusButtonC" data-tooltip="Зменшує кількість цього товару">-</button>
                         <span class = "amountLabel">1</span>
                         <button class="plusButton" data-tooltip="Збільшує кількість цього товару">+</button>
                     </span>
@@ -68,13 +65,9 @@
             <div class="leftToBuy">Залишилося</div>
 
             <div class="goodsToBuy">
-                <span class="tomatoesLeftBox">
-                    <span class="titleToBuy">Помідори</span>
-                    <span class="amountToBuy">1</span>
-                </span>
                 <span class="cookiesLeftBox">
                     <span class="titleToBuy">Печиво</span>
-                    <span class="amountToBuy">1</span>
+                    <span class="amountToBuy">2</span>
                 </span>
                 <span class="cheeseLeftBox">
                     <span class="titleToBuy">Сир</span>
@@ -84,7 +77,12 @@
 
             <div class="bought">Куплено</div>
 
-            <div class="boughtGoods"></div>
+            <div class="boughtGoods">
+                <span class="tomatoesBoughtBox">
+                    <span class="titleToBuy">Помідори</span>
+                    <span class="amountToBuy">2</span>
+                </span>
+            </div>
         </div>
     </div>
     <div class="badge">
