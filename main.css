@@ -86,44 +86,16 @@ body {
     margin: auto;
 }
 
-.titleC {
+.title {
     display: inline-block;
     width: 35%;
     float: left;
     padding: 8px;
-}
-
-.titleT {
-    display: inline-block;
-    width: 35%;
-    float: left;
-    padding: 8px;
-    text-decoration: line-through;
-}
-
-.titleCh {
-    display: inline-block;
-    width: 34.5%;
-    float: left;
-    padding: 8px;
-    font-size: 12px;
 }
 
 .minusButton {
     border-color: #DB2828;
     background-color: #DB2828;
-    color: white;
-
-    font-size: 20px;
-
-    width: 30px;
-    height: 30px;
-    border-radius: 15px;
-}
-
-.minusButtonC {
-    border-color: #ff7b79;
-    background-color: #ff7b79;
     color: white;
 
     font-size: 20px;
@@ -160,23 +132,6 @@ body {
     color: black;
 }
 
-.amountLabelT {
-    display: inline-block;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 6px;
-    padding-bottom: 6px;
-
-    font-size: 14px;
-
-    border-radius: 4px;
-    background-color: #DADADA;
-    border-color: #DADADA;
-    color: black;
-
-    margin-left: 35px;
-}
-
 .buyColumn {
     padding-right: 25px;
     float: right;
@@ -190,7 +145,7 @@ body {
     padding-top: 7px;
     padding-bottom: 7px;
     font-size: 11px;
-    width: 100px;
+    width: 80px;
     border-radius: 4px;
 }
 
@@ -228,16 +183,12 @@ body {
     padding: 10px;
 }
 
-.tomatoesBoughtBox, .cookiesLeftBox, .cheeseLeftBox {
+.tomatoesLeftBox, .cookiesLeftBox, .cheeseLeftBox {
     display: inline-block;
     background-color: #DADADA;
     padding: 6px;
     border-radius: 4px;
     font-size: 10px;
-}
-
-.tomatoesBoughtBox {
-    text-decoration: line-through;
 }
 
 .amountToBuy {
@@ -252,7 +203,7 @@ body {
 }
 
 .boughtGoods {
-    padding: 10px;
+    height: 30px;
 }
 
 .badge {
@@ -340,5 +291,5 @@ button::after {
 button:hover::after {
     opacity: 1;
     visibility: visible;
-    transition: all 900ms ease;
+    transition: all 1300ms ease;
 }
