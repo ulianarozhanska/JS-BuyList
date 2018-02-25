@@ -65,25 +65,11 @@ body {
     border-width: 0.7px;
 }
 
-.tomatoesBox {
+.box {
     padding: 10px;
     width: 100%;
     margin: auto;
     border-bottom: 1px solid #DADADA;
-    border-top: 1px solid #DADADA;
-}
-
-.cookiesBox {
-    padding: 10px;
-    width: 100%;
-    margin: auto;
-    border-bottom: 1px solid #DADADA;
-}
-
-.cheeseBox {
-    padding: 10px;
-    width: 100%;
-    margin: auto;
 }
 
 .title {
@@ -91,6 +77,22 @@ body {
     width: 35%;
     float: left;
     padding: 8px;
+}
+
+.crossedTitle {
+    display: inline-block;
+    width: 35%;
+    float: left;
+    padding: 8px;
+    text-decoration: line-through;
+}
+
+.editTitle {
+    display: inline-block;
+    width: 34.5%;
+    float: left;
+    padding: 8px;
+    font-size: 12px;
 }
 
 .minusButton {
@@ -132,6 +134,22 @@ body {
     color: black;
 }
 
+amountLabelB {
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+
+    font-size: 14px;
+
+    border-radius: 4px;
+    background-color: #DADADA;
+    border-color: #DADADA;
+    color: black;
+    margin-left: 35px;
+}
+
 .buyColumn {
     padding-right: 25px;
     float: right;
@@ -149,7 +167,7 @@ body {
     border-radius: 4px;
 }
 
-.unbuyButton {
+.deleteButton {
     border-color: #d30000;
     background-color: #d30000;
     color: white;
@@ -161,6 +179,8 @@ body {
     height: 30px;
     border-radius: 4px;
 }
+
+
 
 .leftToBuy {
     padding: 18px;
@@ -183,7 +203,7 @@ body {
     padding: 10px;
 }
 
-.tomatoesLeftBox, .cookiesLeftBox, .cheeseLeftBox {
+.rightItem {
     display: inline-block;
     background-color: #DADADA;
     padding: 6px;
