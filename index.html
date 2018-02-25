@@ -9,7 +9,7 @@
     <div class="container">
         <div class="leftColumn">
             <div class="search">
-                <input class="searchLine" type="text" placeholder="Назва товару">
+                <input id="searchLine" class="searchLine" type="text" placeholder="Назва товару">
                 <button class="searchButton" data-tooltip="Додає товар до кошика">Додати</button>
             </div>
         </div>
@@ -20,45 +20,26 @@
             <div class="bought">Куплено</div>
             <div class="boughtGoods"></div>
         </div>
-
-        <div class="badge">
-            <div class="badgeTitle">Buy List</div>
-            <div class="cratedBy">Created by:</div>
-            <div class="myName">Uliana Rozhanska</div>
-        </div>
     </div>
 
     <div class="template" style="display: none">
-        <div class="buyBlock unbought">
-            <div class="box">
-                <span class = "titleColumn">
-                    <span class="title">Title</span>
-                    <input class="editTitle" type="text" value="Title" style="display: none">
-                </span>
-                <span class = "amountColumn">
-                    <button class="minusButton" data-tooltip="Зменшує кількість цього товару">-</button>
-                    <span class = "amountLabel">0</span>
-                    <button class="plusButton" data-tooltip="Збільшує кількість цього товару">+</button>
-                </span>
-                <span class = "buyColumn">
-                    <button class="buyButton" data-tooltip="Тисніть, якщо вже купили цей товар">Куплено</button>
-                    <button class="deleteButton" data-tooltip="Тисніть, щоб видалити цей товар зі списку">x</button>
-                    <button class="unbuyButton" style="display: none" data-tooltip="Тисніть, якщо ще не купили цей товар">Не куплено</button>
-                </span>
-            </div>
-        </div>
-        <div class="buyBlock bought" style="display: none">
-            <div class="box">
-                <span class = "titleColumn">
-                    <span class="crossedTitle">Title</span>
-                </span>
-                <span class = "amountColumn">
-                    <span class = "amountLabelB">0</span>
-                </span>
-                <span class = "buyColumn">
-                    <button class="unbuyButton" data-tooltip="Тисніть, якщо ще не купили цей товар">Не куплено</button>
-                </span>
-            </div>
+        <div class="box">
+            <span class = "titleColumn">
+                <span class="title">Title</span>
+                <input class="editTitle" type="text" value="Title" style="display: none">
+                <span class="crossedTitle" style="display: none">Title</span>
+            </span>
+            <span class = "amountColumn">
+                <button class="minusButton" data-tooltip="Зменшує кількість цього товару">-</button>
+                <span class = "amountLabel">0</span>
+                <span class = "amountLabelB" style="display: none">0</span>
+                <button class="plusButton" data-tooltip="Збільшує кількість цього товару">+</button>
+            </span>
+            <span class = "buyColumn">
+                <button class="buyButton" data-tooltip="Тисніть, якщо вже купили цей товар">Куплено</button>
+                <button class="deleteButton" data-tooltip="Тисніть, щоб видалити цей товар зі списку">x</button>
+                <button class="unbuyButton" style="display: none" data-tooltip="Тисніть, якщо ще не купили цей товар">Не куплено</button>
+            </span>
         </div>
     </div>
 
@@ -69,6 +50,13 @@
         </span>
     </div>
 
+    <div class="badge">
+        <div class="badgeTitle">Buy List</div>
+        <div class="cratedBy">Created by:</div>
+        <div class="myName">Uliana Rozhanska</div>
+    </div>
+
+    <script	type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script type="text/javascript" src="main.js"></script>
 
 </body>
